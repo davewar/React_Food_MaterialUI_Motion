@@ -1,14 +1,21 @@
 import React,{useState} from 'react';
 import { motion } from 'framer-motion';
 
-import {Card, CardHeader, CardActions, CardMedia,List, CardContent,ListItem,  Button, Typography, makeStyles, ListItemText,} from '@material-ui/core'
+import {Card, CardHeader, CardActions, CardMedia,List, CardContent,ListItem,  Button, Typography, makeStyles, ListItemText, Hidden,} from '@material-ui/core'
+import { MicNoneTwoTone } from '@material-ui/icons';
 
 var uniqid = require('uniqid');
 
 //css
 const useStyles = makeStyles({
     card:{
-        background: '#fffafa',
+        background: '#fffafa',   
+        maxHeight: '600px',
+        overflowY: 'auto',
+           '&::-webkit-scrollbar': {
+        display: 'none',
+        
+        }
         
     },
     imageItem:{
